@@ -175,7 +175,7 @@ Copy `.env.example` in both folders and fill in values:
   ```
 * **Frontend (`/client/.env`)**:
   ```env
-  VITE_API_URL=http://localhost:5001/api
+  VITE_API_URL=https://chaispot-fgfp.onrender.com
   ```
 
 ### 3. Run Locally
@@ -187,7 +187,7 @@ Copy `.env.example` in both folders and fill in values:
   ```bash
   cd client && npm run dev
   ```
-* Open `http://localhost:5173` in your browser.
+* Open `https://chaispot-eta.vercel.app/login` in your browser.
 
 ---
 
