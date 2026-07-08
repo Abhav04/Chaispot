@@ -11,6 +11,8 @@ A complete MERN stack application allowing users to register and discover local 
 | **Frontend (Vercel)** | [https://chaispot-eta.vercel.app](https://chaispot-eta.vercel.app) |
 | **Backend API (Render)** | [https://chaispot-fgfp.onrender.com/api/health](https://chaispot-fgfp.onrender.com/api/health) |
 | **GitHub Repository** | [https://github.com/Abhav04/Chaispot](https://github.com/Abhav04/Chaispot) |
+**Loom video** | [https://drive.google.com/file/d/14k-zJaMeNREOluo7kRz_AK1V4qy-BtJg/view?usp=drive_link] |
+
 
 
 ## 🚀 Project Overview
