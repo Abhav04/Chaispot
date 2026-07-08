@@ -124,7 +124,7 @@ All request payloads and error boundaries return consistent JSON formats.
 
 ```
 ChaiSpot/
-├── client/                 # React Frontend
+├── frontend/               # React Frontend
 │   ├── public/
 │   ├── src/
 │   │   ├── components/     # Reusable components (MapView, ShopCard, etc.)
@@ -137,7 +137,7 @@ ChaiSpot/
 │   ├── .env.example
 │   ├── package.json
 │   └── vite.config.js
-└── server/                 # Express Backend
+└── backend/                # Express Backend
     ├── src/
     │   ├── config/         # Database configs
     │   ├── controllers/    # API controllers
@@ -167,23 +167,23 @@ git clone https://github.com/Abhav04/Chaispot.git
 cd ChaiSpot
 
 # Install backend dependencies
-cd server && npm install
+cd backend && npm install
 
 # Install frontend dependencies
-cd ../client && npm install
+cd ../frontend && npm install
 ```
 
 ### 2. Configure Environment Variables
 Copy `.env.example` in both folders and fill in values:
 
-* **Backend (`/server/.env`)**:
+* **Backend (`/backend/.env`)**:
   ```env
   PORT=5001
   MONGO_URI=mongodb+srv://<user>:<password>@<cluster>.mongodb.net/chaispot
   JWT_SECRET=your_jwt_secret_key
   NODE_ENV=development
   ```
-* **Frontend (`/client/.env`)**:
+* **Frontend (`/frontend/.env`)**:
   ```env
   VITE_API_URL=https://chaispot-fgfp.onrender.com
   ```
@@ -191,11 +191,11 @@ Copy `.env.example` in both folders and fill in values:
 ### 3. Run Locally
 * **Start Backend Server**:
   ```bash
-  cd server && npm run dev
+  cd backend && npm run dev
   ```
 * **Start Vite Frontend Server**:
   ```bash
-  cd client && npm run dev
+  cd frontend && npm run dev
   ```
 * Open `http://localhost:5173` in your browser.
 
@@ -210,14 +210,14 @@ Copy `.env.example` in both folders and fill in values:
 
 ### Backend (Render Deployment)
 1. Connect your repository on Render and create a new **Web Service**.
-2. Root directory: `server`.
+2. Root directory: `backend`.
 3. Build Command: `npm install`.
 4. Start Command: `npm start` (runs `node index.js`).
 5. In **Environment Variables**, define `MONGO_URI`, `JWT_SECRET`, `NODE_ENV=production`, and `PORT=5001`.
 
 ### Frontend (Vercel Deployment)
 1. Add a new project on Vercel and link your repository.
-2. Root directory: `client`.
+2. Root directory: `frontend`.
 3. In **Environment Variables**, configure `VITE_API_URL` pointing to the deployed Render API (e.g. `https://chaispot-backend.onrender.com/api`).
 4. Click **Deploy**.
 
