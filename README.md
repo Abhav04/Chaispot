@@ -4,6 +4,14 @@
 A complete MERN stack application allowing users to register and discover local chai shops, view them on an interactive open-source map, calculate driving routes, submit reviews, and earn reward points redeemable for coupon codes.
 
 ---
+## 🌍 Live Application
+
+| | URL |
+|---|---|
+| **Frontend (Vercel)** | [https://chaispot-eta.vercel.app](https://chaispot-eta.vercel.app) |
+| **Backend API (Render)** | [https://chaispot-fgfp.onrender.com/api/health](https://chaispot-fgfp.onrender.com/api/health) |
+| **GitHub Repository** | [https://github.com/Abhav04/Chaispot](https://github.com/Abhav04/Chaispot) |
+
 
 ## 🚀 Project Overview
 
@@ -229,27 +237,5 @@ Copy `.env.example` in both folders and fill in values:
 
 ---
 
-## 🎬 Screen Walkthrough Script (2-3 Minutes)
 
-* **Intro (0:00 - 0:15)**: 
-  *"Hi, today I'm demonstrating ChaiSpot, a platform for chai shop discovery and rewards. First, let's register a new user or log in. I'll log in with my existing account."*
-* **Create Shop (0:15 - 0:45)**:
-  *"Now, let's register a new shop. I'll click 'Add Shop' and fill in the name, description, and address. When I hit submit, the backend geocodes the address using Nominatim, converting it to GeoJSON coordinates and saving it directly to MongoDB Atlas."*
-* **Interactive Map & Directions (0:45 - 1:15)**:
-  *"Next, let's view the map page. All shops are rendered as red markers on OpenStreetMap raster tiles using MapLibre GL. Clicking a marker reveals the details popup. Let's get driving directions. I can select 'Current Location' or type a start point. Let's type 'Mumbai'. OSRM instantly generates the routing track, rendering a blue vector path and auto-fitting the map view bounds."*
-* **Write Review (1:15 - 1:45)**:
-  *"Let's head to the Shop Details page to submit a review. Since this is a new shop and this will be its first review, I'll submit a rating of 5 stars. Submitting it immediately recalculates the shop's average score and count on the dashboard, and awards me 15 points."*
-* **Review Edit (1:45 - 2:00)**:
-  *"If I decide to edit my review to 4 stars, the system updates the review in-place, satisfying our database-level unique constraints. The points balance remains unchanged, ensuring users only earn points for initial reviews."*
-* **Rewards Coupon (2:00 - 2:30)**:
-  *"Lastly, let's check the Rewards page. I now have enough points. I will select my shop and click 'Redeem Coupon'. The backend atomically decrements 50 points and generates the coupon code `CHAI-XXXXXX`, updating the active history dashboard. Thank you!"*
 
----
-
-## 🌍 Live Application
-
-| | URL |
-|---|---|
-| **Frontend (Vercel)** | [https://chaispot-eta.vercel.app](https://chaispot-eta.vercel.app) |
-| **Backend API (Render)** | [https://chaispot-fgfp.onrender.com/api/health](https://chaispot-fgfp.onrender.com/api/health) |
-| **GitHub Repository** | [https://github.com/Abhav04/Chaispot](https://github.com/Abhav04/Chaispot) |
