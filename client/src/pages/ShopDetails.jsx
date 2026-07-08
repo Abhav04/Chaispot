@@ -19,9 +19,9 @@ const ShopDetails = () => {
     try {
       const [shopRes, reviewsRes] = await Promise.all([
 
-  api.get(`/shops/${id}`),
+  api.get(`/api/shops/${id}`),
 
-  api.get(`/shops/${id}/reviews`)
+  api.get(`/api/shops/${id}/reviews`)
 
 ]);
 

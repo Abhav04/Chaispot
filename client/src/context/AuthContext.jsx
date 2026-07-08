@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
       const savedToken = localStorage.getItem('token');
       if (savedToken) {
         try {
-          const response = await api.get('/users/me');
+          const response = await api.get('/api/users/me')
           if (response.data && response.data.success) {
             setUser(response.data.user);
             setToken(savedToken);
@@ -59,7 +59,7 @@ export const AuthProvider = ({ children }) => {
 
   const signup = async (email, password, confirmPassword) => {
     try {
-      const response = await api.post('/api/auth/login', { email, password, confirmPassword });
+      const response = await api.post('/api/auth/signup', { email, password, confirmPassword });
       if (response.data && response.data.success) {
         const { token: receivedToken, user: receivedUser } = response.data;
         localStorage.setItem('token', receivedToken);
@@ -79,7 +79,7 @@ export const AuthProvider = ({ children }) => {
     const savedToken = localStorage.getItem('token');
     if (savedToken) {
       try {
-        const response = await api.get('/users/me');
+        const response = await api.get('/api/users/me')
         if (response.data && response.data.success) {
           setUser(response.data.user);
         }

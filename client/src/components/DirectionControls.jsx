@@ -50,7 +50,7 @@ const DirectionControls = ({ shop, onStartCoordsResolved, onCancel }) => {
     setError(null);
 
     try {
-      const response = await api.get(`/shops/geocode?address=${encodeURIComponent(address.trim())}`);
+      const response = await api.get(`/api/shops/geocode?address=${encodeURIComponent(address.trim())}`);
       setLoading(false);
       if (response.data && response.data.success) {
         const { longitude, latitude, placeName } = response.data.data;

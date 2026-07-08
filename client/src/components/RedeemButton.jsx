@@ -26,7 +26,7 @@ const RedeemButton = ({ points, shops, onRedeemSuccess }) => {
     setSuccess(null);
 
     try {
-      const response = await api.post('/rewards/redeem', {
+      const response = await api.post('/api/rewards/redeem', {
         shopId: selectedShopId
       });
 

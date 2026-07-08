@@ -17,7 +17,7 @@ const AddShop = () => {
     setSubmitting(true);
 
     try {
-      const response = await api.post('/shops', {
+      const response = await api.post('/api/shops', {
         name,
         address,
         description,

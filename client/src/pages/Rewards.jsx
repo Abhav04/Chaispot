@@ -18,9 +18,9 @@ const Rewards = () => {
   const fetchRewardsData = useCallback(async () => {
     try {
       const [pointsRes, couponsRes, shopsRes] = await Promise.all([
-        api.get('/users/me/points'),
-        api.get('/users/me/coupons'),
-        api.get('/shops')
+        api.get('/api/users/me/points'),
+        api.get('/api/users/me/coupons'),
+        api.get('/api/shops')
       ]);
 
       if (pointsRes.data && pointsRes.data.success) {

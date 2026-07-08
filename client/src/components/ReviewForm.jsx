@@ -33,7 +33,7 @@ const ReviewForm = ({ shopId, existingReview, onSubmitSuccess }) => {
     setSuccessMsg(null);
 
     try {
-      const response = await api.post(`/shops/${shopId}/reviews`, {
+      const response = await api.post(`/api/shops/${shopId}/reviews`, {
         rating: parseInt(rating),
         text: text.trim()
       });
