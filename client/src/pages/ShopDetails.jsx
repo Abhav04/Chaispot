@@ -18,9 +18,12 @@ const ShopDetails = () => {
   const fetchShopData = useCallback(async () => {
     try {
       const [shopRes, reviewsRes] = await Promise.all([
-        api.get(`/shops/${id}`),
-        api.get(`/shops/${id}/reviews`)
-      ]);
+
+  api.get(`/shops/${id}`),
+
+  api.get(`/shops/${id}/reviews`)
+
+]);
 
       if (shopRes.data && shopRes.data.success) {
         setShop(shopRes.data.data);
