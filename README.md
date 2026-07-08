@@ -153,7 +153,7 @@ ChaiSpot/
 
 ### 1. Clone & Install Dependencies
 ```bash
-git clone https://github.com/your-username/ChaiSpot.git
+git clone https://github.com/Abhav04/Chaispot.git
 cd ChaiSpot
 
 # Install backend dependencies
@@ -187,7 +187,7 @@ Copy `.env.example` in both folders and fill in values:
   ```bash
   cd client && npm run dev
   ```
-* Open `https://chaispot-eta.vercel.app/login` in your browser.
+* Open `http://localhost:5173` in your browser.
 
 ---
 
@@ -246,7 +246,10 @@ Copy `.env.example` in both folders and fill in values:
 
 ---
 
-## 🖼️ Media & Previews
-* **Live Demo URL**: *[Placeholder - Deployed App URL]*
-* **Screen Walkthrough Video**: *[Placeholder - Walkthrough video]*
-* **Screenshots**: *[Placeholder - App interface images]*
+## 🌍 Live Application
+
+| | URL |
+|---|---|
+| **Frontend (Vercel)** | [https://chaispot-eta.vercel.app](https://chaispot-eta.vercel.app) |
+| **Backend API (Render)** | [https://chaispot-fgfp.onrender.com/api/health](https://chaispot-fgfp.onrender.com/api/health) |
+| **GitHub Repository** | [https://github.com/Abhav04/Chaispot](https://github.com/Abhav04/Chaispot) |
