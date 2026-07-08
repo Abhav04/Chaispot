@@ -28,7 +28,7 @@ const MapPage = () => {
   useEffect(() => {
     const fetchShops = async () => {
       try {
-        const response = await api.get('/shops');
+        const response = await api.get('/api/shops');
         if (response.data && response.data.success) {
           setShops(response.data.data);
         }
